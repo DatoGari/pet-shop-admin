@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import type { RootState } from "../app/Store";
+import type { RootState } from "../redux/store";
 import { useNavigate } from "react-router-dom";
 import { NavBar, NavButton, DashboardContainer, CardGrid, PetCard, PetCategory, PetImage, PetPrice, PetTitle } from "./Dashboard.Styles";
 

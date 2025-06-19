@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import type { Category } from "../../features/categories/CategoryTypes";
-import type { RootState } from "../../app/Store"
+import type { RootState } from "../../redux/Store"
 import { deleteCategory } from "../../features/categories/categoriesSlice";
 
 const Table = styled.table`

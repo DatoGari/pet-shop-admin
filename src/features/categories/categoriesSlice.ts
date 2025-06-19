@@ -1,10 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import type { Category, CategoriesState } from './CategoryTypes';
+import api from "../../api/axios";
 
 const initialState: CategoriesState = {
   categories: [],
+  loading: false,
+  error: null
 };
+
+export const fetchCategories = createAsyncThunk("categories/fetchCategories", async () => {
+  const response = await api.get("/")
+})
 
 const categoriesSlice = createSlice({
   name: 'categories',

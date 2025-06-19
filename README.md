@@ -52,5 +52,3 @@ export default tseslint.config({
   },
 })
 ```
-# pet-shop-admin
-Pet Shop Admin Panel Frontend App
